@@ -16,7 +16,11 @@ export class HomePage {
         await expect( this.page.getByRole('link', { name: 'Your Vehicle' })).toBeVisible();
         await this.page.getByRole('link', { name: 'Your Vehicle' }).hover();
         await this.page.waitForTimeout(1000);
+        await this.page.screenshot({path: 'hoverovervehicle.png'});
         await expect(this.page.getByRole('link', {name:'EV Charging', exact: true})).toBeVisible();
-       // this.page.getByRole('link', {name:'EV Charging', exact: true}).click();
+        await this.page.getByRole('link', {name:'EV Charging', exact: true}).click();
+        await expect(this.page).toHaveURL('https://ampcharge.ampol.com.au'); 
+        await this.page.screenshot({path: 'evcharging.png'});
+        
     }
 }
