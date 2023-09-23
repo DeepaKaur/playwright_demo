@@ -7,11 +7,13 @@ export class ChargePage {
       this.page = page;
     }
    
-    async clickEnergyIconOnPage() {
-      
-      await this.page.getByRole('link' , {name: this.energyURL}).click();
-      //Verify sign-up link is visible
-      await expect(this.page.getByRole('link', {name: '/sign-up/postcode'})).toBeVisible();
+    async gotoEnergyPage() {
+      await this.page.locator('//div[@class="nav-bar--level-1--content--brands"]/a[2]').click();
+         //Verify URL
+         await expect(this.page).toHaveURL(this.energyURL);
+         await this.page.waitForTimeout(1000);
+         //capture a screenshot on energy page
+         await this.page.screenshot({ path: 'energy.png' });
     }
 
 
