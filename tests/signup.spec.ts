@@ -11,6 +11,7 @@ test('Signup test', async ({ page }) => {
   const chargePage: ChargePage = new ChargePage(page);
   const energyPage: EnergyPage = new EnergyPage(page);
   
+  try {
   console.log("Starting signup test...");
   console.log("Navigating to home page");
   // interact with home page object
@@ -30,5 +31,10 @@ test('Signup test', async ({ page }) => {
   console.log("Navigating to sign up page")
   //interact with energy page object
   await energyPage.gotoSignupPage();
-
+  } catch(e) {
+      console.error("Unexpected error occured", e);
+      await page.screenshot({ path: 'error.png' });
+      await page.close();
+      expect('success').toBe('Test failed with unexpected error, please see logs');
+  } 
 });
