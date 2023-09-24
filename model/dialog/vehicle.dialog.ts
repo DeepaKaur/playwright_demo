@@ -11,6 +11,8 @@ export class VehicleDialog {
         //Verify EV charging link visible
         await expect(this.page.getByRole('link', { name: 'EV Charging', exact: true })).toBeVisible();
         await this.page.getByRole('link', { name: 'EV Charging', exact: true }).click();
+
+        console.log("Validating charge URL");
         //Verify URL
         await expect(this.page).toHaveURL(this.chargeURL);
         await this.page.waitForTimeout(1000);
