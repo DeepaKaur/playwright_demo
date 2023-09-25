@@ -1,7 +1,7 @@
 {
   "name": "playwright_demo",
   "version": "1.0.0",
-  "description": "",
+  "description": "Demo project with Playwright",
   "main": "index.js",
   "scripts": {},
   "keywords": [],
@@ -9,6 +9,7 @@
   "license": "ISC",
   "devDependencies": {
     "@playwright/test": "^1.38.1",
-    "@types/node": "^20.6.3"
+    "@types/node": "^20.6.3",
+    "ajv": "8.12.0"
   }
 }
