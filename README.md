@@ -10,6 +10,9 @@ Demo of PlayWright for API testing and Web testing automation, which runs on Cir
 ### Command to run from the terminal on the local 
 * npx playwright test
 
+### Command to view report
+* npx playwright show-report
+
 ### Steps to follow
 * Install PlayWright Test for VSCode, follow https://playwright.dev/docs/getting-started-vscode
 * CircleCI setup integration with git repositor, follow https://circleci.com/blog/setting-up-continuous-integration-with-github/
