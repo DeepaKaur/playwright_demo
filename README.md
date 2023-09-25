@@ -27,15 +27,15 @@ If there is any unexpected error, the log will show the error.
 * Page object model - Design pattern creates object repository of the web page elements
 
 * ├───.circleci
-* │   └───config.yml 
+*    └───config.yml 
 * ├───model
-* │   ├───dialog
-* │      └───vehicle.dialog.ts -- Vehicle popup dialog
-* │   └───pages
-* │      └───charge.page.ts -- EV charging page
-* │      └───energy.page.ts -- Energy page
-* │      └───home.page.ts -- Home page
-* ├───playwright-report
-* ├───tests
-* │   └───signup.specs.ts -- UI test
-* │   └───weatherapi.spc.ts -- API test
+*    ├───dialog
+*       └───vehicle.dialog.ts -- Vehicle popup dialog
+*    └───pages
+*       └───charge.page.ts -- EV charging page
+*       └───energy.page.ts -- Energy page
+*       └───home.page.ts -- Home page
+* |───playwright-report
+* |───tests
+*    └───signup.specs.ts -- UI test
+*    └───weatherapi.spc.ts -- API test
