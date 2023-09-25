@@ -12,7 +12,7 @@ test('Signup test', async ({ page }) => {
   const energyPage: EnergyPage = new EnergyPage(page);
   
   try {
-  console.log("Starting signup test...");
+  console.log("Starting UI test...");
   console.log("Navigating to home page");
   // interact with home page object
   await homePage.gotoHomePage(); 
