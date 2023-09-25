@@ -20,4 +20,4 @@ see .circleci/config.yml for pipeline configured for this demo
 A report like below will be generated in playwright-report directory, can also be viewed using npx playwright show-report command
 Screenshots will be generated for the following steps : homepage navigation, Vehicle link hover, charge page, energy page and signup page
 If there is any unexpected error, the log will show the error.
-![Error Scenario](https://github.com/DeepaKaur/playwright_demo/blob/master/exceptionScenario.png?raw=true)
+![Error Scenario](https://github.com/DeepaKaur/playwright_demo/blob/main/exceptionScenario.png?raw=true)
